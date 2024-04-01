@@ -1,0 +1,41 @@
+Pembagian Dataset:
+
+    Setelah dataset dikumpulkan, langkah selanjutnya adalah membaginya menjadi dua bagian: data latih dan data uji. Ini dilakukan untuk mengukur kinerja model secara objektif. Metode train_test_split dari scikit-learn digunakan untuk membagi dataset ini.
+    
+
+
+
+dua dropout layer dan 
+
+
+epochs=1000
+
+Ini adalah jumlah iterasi total yang dilakukan pada seluruh dataset selama pelatihan.
+
+alasan:agar model dapat lebih memahami dataset. Namun tanpa di duga, ternyata model sudah berhenti melatih pada epochs 238.
+
+
+batch_size=128
+
+Ini adalah jumlah sampel yang diproses sekaligus sebelum parameter model diperbarui. Semakin besar ukuran batch, semakin cepat proses pelatihan.
+
+tf.keras.layers.Dropout(0.2)
+tf.keras.layers.Dropout(0.4)
+
+Ini adalah proporsi unit yang diabaikan selama pelatihan untuk mengurangi overfitting.
+
+optimizer='adam'
+Optimizer yang digunakan selama pelatihan. Dalam kasus ini, Adam optimizer digunakan, yang merupakan algoritma penurunan gradien stokastik berbasis momentum.
+
+loss='sparse_categorical_crossentropy'
+Ini adalah fungsi yang digunakan untuk mengukur seberapa baik model memprediksi label yang benar selama pelatihan. Dalam kasus ini, fungsi entropi silang kategorikal digunakan karena tugas klasifikasi dengan lebih dari dua kelas.
+
+patience=20
+Ini adalah jumlah epoch yang akan ditunggu sebelum pelatihan dihentikan jika tidak ada peningkatan dalam metrik validasi yang diawasi (dalam hal ini, val_loss).
+
+
+cp_callback = tf.keras.callbacks.ModelCheckpoint(
+    model_save_path, verbose=1, save_weights_only=False)
+    Ini adalah callback yang digunakan untuk menyimpan model selama pelatihan. Ini memungkinkan Anda menyimpan model terbaik selama pelatihan untuk digunakan kemudian.
+
+Itulah beberapa hyperparameter yang terlihat dalam kode Anda. Hyperparameter adalah parameter yang harus diatur sebelum pelatihan dimulai dan berpotensi memiliki dampak signifikan terhadap kinerja dan kestabilan model.
