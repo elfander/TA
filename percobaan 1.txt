@@ -1,0 +1,65 @@
+percobaan 1
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.92      0.24      0.39       139
+           1       0.50      0.98      0.66       117
+           2       0.99      1.00      1.00       210
+           3       1.00      0.92      0.96       122
+           4       0.83      0.35      0.49       115
+           5       0.71      0.41      0.52       123
+           6       0.78      0.92      0.84       124
+           7       1.00      0.99      0.99       135
+           8       0.84      0.93      0.88       126
+           9       1.00      1.00      1.00        93
+          10       1.00      0.95      0.97       132
+          11       0.80      0.92      0.85       211
+          12       0.98      0.99      0.99       182
+          13       0.85      1.00      0.92       284
+          14       1.00      1.00      1.00       304
+          15       1.00      1.00      1.00       137
+          16       1.00      1.00      1.00       137
+          17       0.95      1.00      0.97       166
+          18       0.49      0.62      0.55       142
+          19       0.96      1.00      0.98       136
+          20       0.85      1.00      0.92        96
+          21       0.95      0.62      0.75        91
+          22       0.98      0.95      0.96        98
+          23       1.00      0.51      0.68        70
+          24       1.00      1.00      1.00        87
+          25       0.98      1.00      0.99        56
+          
+          0,2208
+          1,16
+          
+
+f1-score = 2 Precission X Recall / Precission + recall
+
+untuk kelas 0
+
+f1-score = 2 x 0.92 x 0.24 / 0.92 + 0.24
+f1-score = 2 x 0.2208 / 1.16
+f1-score = 2 x 0.19
+f1-score = 0.38 atau 0.39 
+
+
+Kelas 0: Precision yang relatif rendah (0.92) menunjukkan bahwa dari semua data yang diprediksi sebagai kelas 0, sekitar 92% benar-benar adalah kelas 0. Namun, recall yang rendah (0.24) menunjukkan bahwa model cenderung melewatkan banyak kasus yang sebenarnya kelas 0.
+
+Kelas 1: Precision yang cukup rendah (0.50) menunjukkan bahwa hanya sekitar setengah dari prediksi kelas 1 yang benar-benar adalah kelas 1. Namun, recall yang tinggi (0.98) menunjukkan bahwa model cenderung menemukan sebagian besar kasus yang sebenarnya kelas 1.
+
+Kelas 2: Precision dan recall yang sangat tinggi (0.99 dan 1.00) menunjukkan bahwa model hampir sempurna dalam mengidentifikasi kelas 2.
+
+Kelas 3: Precision yang sempurna (1.00) menunjukkan bahwa semua prediksi kelas 3 benar-benar adalah kelas 3. Namun, recall yang sedikit lebih rendah (0.92) menunjukkan bahwa model melewatkan beberapa kasus yang sebenarnya kelas 3.
+
+Kelas 4: Precision yang relatif rendah (0.83) menunjukkan bahwa sekitar 83% dari prediksi kelas 4 adalah benar-benar kelas 4. Namun, recall yang rendah (0.35) menunjukkan bahwa model cenderung melewatkan banyak kasus yang sebenarnya kelas 4.
+
+presisi rendah <=0,50
+presisi rendah = 
+b , p 
+
+ternyata huruf b bertabrakan dengan huruf f
+solusinya adalah huruf B dan f harus beda tangan 
+ 
+
+
